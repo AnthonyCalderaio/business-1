@@ -27,7 +27,7 @@
   <section id="blog" style="margin-bottom: 50px;">
     <h1 style="color: black; text-align: center;">Blog</h1>
     <div *ngFor="let post of blogs">
-      <app-blog-post [title]="post.title" [content]="post.content" [date]="post.date"></app-blog-post>
+      <app-blog-post [title]="post.title" [content]="post.content" [date]="post.date" [link]="post.link"></app-blog-post>
     </div>
     
   </section>

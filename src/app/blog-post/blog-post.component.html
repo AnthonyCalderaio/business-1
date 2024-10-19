@@ -2,5 +2,8 @@
     <h3>{{ title }}</h3>
     <p class="date">{{ date }}</p>
     <p [innerHTML]="content"></p>
+    <div *ngIf="link">
+        <a [href]="link">{{title}}</a>
+    </div>
     
   </article>
