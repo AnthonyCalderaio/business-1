@@ -1,8 +1,27 @@
-<div class="container">
-  <header>
-    <h1>Wood Slat Installations of the Palm Beach</h1>
-    <p>Transform your home with modern, elegant wood slats.</p>
-  </header>
+
+<div id="home" class="container">
+  <!-- v1 -->
+  <!-- <header>
+    <nav>
+      <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/blog">Blow</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+  <!-- v2 -->
+  
+    <nav class="menu-bar">
+      <div class="logo">Palm Beach Wood Slats</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <!-- <li><a href="#gallery">Gallery</a></li> -->
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
 
   <section class="gallery">
     <img src="../assets/examples/example1.jpg" alt="Modern wood slats">
@@ -10,7 +29,20 @@
     <img src="../assets/examples/example3.jpg" alt="Elegant wood slat wall">
   </section>
 
-  <section class="contact">
+  <header>
+    <h1 style="color: white;">Wood Slat Wall Installations</h1>
+    <h2 style="color: #2c3e50;">Servicing the Palm Beach Area</h2>
+    <p>Transform your home with modern, elegant wood slats.</p>
+  </header>
+
+  <section id="blog">
+    <div *ngFor="let post of blogs">
+      <app-blog-post [title]="post.title" [content]="post.content"></app-blog-post>
+    </div>
+    
+  </section>
+
+  <section id="contact" class="contact">
     <h2>Get a Quote</h2>
     <p>Fill out the form below or call us at <a href="tel:+1234567890">(267) 410-2791</a> for a quote. We guarantee a response within 2 hours!</p>
     <form (ngSubmit)="onSubmit()" netlify>

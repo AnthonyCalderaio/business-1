@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { BlogPostComponent } from './blog-post/blog-post.component';
+let BlogsObject = require('./blog-post/posts.json');
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FormsModule],
+  imports: [CommonModule, RouterOutlet, FormsModule, BlogPostComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -17,6 +19,8 @@ export class AppComponent {
   email = '';
   phone = '';
   message = '';
+
+  blogs = BlogsObject.blogs
 
   onSubmit() {
     console.log('Form submitted', { name: this.name, email: this.email, phone: this.phone, message: this.message });

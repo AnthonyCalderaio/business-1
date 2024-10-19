@@ -3,6 +3,8 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    margin-top: 42px;
+    scroll-margin-top: 42px;
   }
   header {
     text-align: center;
@@ -27,7 +29,7 @@
     border-radius: 8px;
   }
   form {
-    display: flex;
+    display: flex;    
     flex-direction: column;
   }
   input, textarea {
@@ -47,3 +49,81 @@
   button:hover {
     background-color: #34495e;
   }
+
+  header {
+    background-color: gray;
+    padding: 1rem 0;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+//   Below this line is experimental
+//   ///////////////////////////////
+
+//   nav ul {
+//     list-style-type: none;
+//     padding: 0;
+//     display: flex;
+//     justify-content: center;
+//   }
+//   nav ul li {
+//     margin: 0 1rem;
+//   }
+//   nav ul li a {
+//     color: white;
+//     text-decoration: none;
+//     font-weight: bold;
+//   }
+//   main {
+//     min-height: calc(100vh - 100px);
+//     padding: 2rem 0;
+//   }
+  footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+
+  .menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  .menu-bar .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  .menu-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .menu-bar ul li {
+    margin-left: 20px;
+  }
+  .menu-bar ul li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .menu-bar ul li a:hover {
+    color: #3498db;
+  }
+
+  
