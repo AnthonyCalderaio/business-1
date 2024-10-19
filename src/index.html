@@ -12,8 +12,9 @@
 <body>
   <app-root></app-root>
 
- 2.0
-  <form id="hiddenIndexForm" name="contact-form" method="POST" data-netlify="true" style="visibility: hidden;" #myForm>
+ 3.0
+ <!-- style="visibility: hidden;" -->
+  <form id="hiddenIndexForm" name="contact-form" method="POST" data-netlify="true"  #myForm>
     <p>
       <label>Name <input id="hiddenNameInput" type="text" name="name" /></label>
     </p>
@@ -23,7 +24,7 @@
     <p>
       <button (click)="onSubmit()" type="submit">Send</button>
     </p>
-    <input type="hidden" name="contact-form" value="testValye" />
+    <!-- <input type="hidden" name="contact-form" value="testValye" /> -->
   </form>
 
 </body>
