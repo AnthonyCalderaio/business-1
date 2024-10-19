@@ -15,10 +15,10 @@
  2.0
   <form id="hiddenIndexForm" name="contact-form" method="POST" data-netlify="true" style="visibility: hidden;" #myForm>
     <p>
-      <label>Name <input #hiddenNameInput type="text" name="name" /></label>
+      <label>Name <input id="hiddenNameInput" type="text" name="name" /></label>
     </p>
     <p>
-      <label>Email <input #hiddenEmailInput type="email" name="email" /></label>
+      <label>Email <input id="hiddenEmailInput" type="email" name="email" /></label>
     </p>
     <p>
       <button (click)="onSubmit()" type="submit">Send</button>

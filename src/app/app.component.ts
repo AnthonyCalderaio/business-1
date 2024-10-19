@@ -14,11 +14,11 @@ let BlogsObject = require('./blog-post/posts.json');
 })
 export class AppComponent {
   title = 'business-1';
-  @ViewChild('hiddenNameInput') hiddenNameInput!: ElementRef;
-  @ViewChild('hiddenEmailInput') hiddenEmailInput!: ElementRef;
+  @ViewChild('hiddenNameInput', { static: false }) hiddenNameInput!: ElementRef;
+  @ViewChild('hiddenemailinput', { static: false }) hiddenemailinput!: ElementRef;
 
-  @ViewChild('shownNameInput') shownNameInput!: ElementRef;
-  @ViewChild('shownEmailInput') shownEmailInput!: ElementRef;
+  @ViewChild('shownNameInput', { static: false }) shownNameInput!: ElementRef;
+  @ViewChild('shownEmailInput', { static: false }) shownEmailInput!: ElementRef;
 
   name = '';
   email = '';
@@ -30,9 +30,25 @@ export class AppComponent {
   onSubmit() {
     console.log('Form submitted', { name: this.name, email: this.email, phone: this.phone, message: this.message });
     // Here you would typically send this data to a server
-    alert('Thank you for your inquiry. We will get back to you within 2 hours!');
-    this.hiddenNameInput.nativeElement.value = this.shownNameInput.nativeElement.value;
-    this.hiddenEmailInput.nativeElement.value = this.shownEmailInput.nativeElement.value;
+    // alert('Thank you for your inquiry. We will get back to you within 2 hours!');
+
+
+    // let hiddenInputName = document.getElementById('hiddenNameInput') as HTMLFormElement
+    // let hiddenInputEmail = document.getElementById('hiddenEmailInput') as HTMLFormElement
+    // let shownInputName = document.getElementById('shownNameInput') as HTMLFormElement
+    // let shownEmailName = document.getElementById('shownEmailInput') as HTMLFormElement
+
+
+    let thing = document.getElementById('hiddenNameInput');
+    if(document.getElementById('hiddenNameInput')){
+      (document.getElementById('hiddenNameInput') as any).value = this.shownNameInput.nativeElement.value;
+    }
+
+    let thing2 = document.getElementById('hiddenEmailInput');
+    if(document.getElementById('hiddenEmailInput')){
+      (document.getElementById('hiddenEmailInput') as any).value = this.shownEmailInput.nativeElement.value;
+    }
+    this.hiddenemailinput.nativeElement.value = this.shownEmailInput.nativeElement.value;
 
     const indexForm = document.getElementById('hiddenIndexForm') as HTMLFormElement;
     if (indexForm) {
