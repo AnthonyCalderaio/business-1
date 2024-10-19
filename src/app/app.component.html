@@ -35,12 +35,24 @@
   <section id="contact" class="contact">
     <h2>Get a Quote</h2>
     <p>Fill out the form below or call us at <a href="tel:+1234567890">(267) 410-2791</a> for a quote. We guarantee a response within 2 hours!</p>
-    <form (ngSubmit)="onSubmit()" netlify>
+    <!-- <form (ngSubmit)="onSubmit()" netlify>
       <input type="text" [(ngModel)]="name" name="name" placeholder="Your Name" required>
       <input type="email" [(ngModel)]="email" name="email" placeholder="Your Email" required>
       <input type="tel" [(ngModel)]="phone" name="phone" placeholder="Your Phone Number" required>
       <textarea [(ngModel)]="message" name="message" placeholder="Tell us about your project" required></textarea>
       <button type="submit">Get Quote</button>
+    </form> -->
+    test form
+    <form name="contact" netlify>
+      <p>
+        <label>Name <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Email <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
     </form>
   </section>
 </div>
