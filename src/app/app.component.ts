@@ -14,8 +14,8 @@ let BlogsObject = require('./blog-post/posts.json');
 })
 export class AppComponent {
   title = 'business-1';
-  @ViewChild('hiddenNameInput', { static: false }) hiddenNameInput!: ElementRef;
-  @ViewChild('hiddenemailinput', { static: false }) hiddenemailinput!: ElementRef;
+  // @ViewChild('hiddenNameInput', { static: false }) hiddenNameInput!: ElementRef;
+  // @ViewChild('hiddenemailinput', { static: false }) hiddenemailinput!: ElementRef;
 
   @ViewChild('shownNameInput', { static: false }) shownNameInput!: ElementRef;
   @ViewChild('shownEmailInput', { static: false }) shownEmailInput!: ElementRef;
@@ -48,7 +48,7 @@ export class AppComponent {
     if(document.getElementById('hiddenEmailInput')){
       (document.getElementById('hiddenEmailInput') as any).value = this.shownEmailInput.nativeElement.value;
     }
-    this.hiddenemailinput.nativeElement.value = this.shownEmailInput.nativeElement.value;
+    // this.hiddenemailinput.nativeElement.value = this.shownEmailInput.nativeElement.value;
 
     const indexForm = document.getElementById('hiddenIndexForm') as HTMLFormElement;
     if (indexForm) {
