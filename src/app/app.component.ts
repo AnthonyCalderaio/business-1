@@ -19,6 +19,8 @@ export class AppComponent {
 
   @ViewChild('shownNameInput', { static: false }) shownNameInput!: ElementRef;
   @ViewChild('shownEmailInput', { static: false }) shownEmailInput!: ElementRef;
+  @ViewChild('shownPhoneInput', { static: false }) shownPhoneInput!: ElementRef;
+  @ViewChild('shownMessageInput', { static: false }) shownMessageInput!: ElementRef;
 
   name = '';
   email = '';
@@ -40,9 +42,21 @@ export class AppComponent {
     if(document.getElementById('hiddenEmailInput')){
       (document.getElementById('hiddenEmailInput') as any).value = this.shownEmailInput.nativeElement.value;
     }
+
+    let thing3 = document.getElementById('hiddenPhoneInput');
+    if(document.getElementById('hiddenPhoneInput')){
+      (document.getElementById('hiddenPhoneInput') as any).value = this.shownPhoneInput.nativeElement.value;
+    }
+
+
+    let thing4 = document.getElementById('hiddenMessageInput');
+    if(document.getElementById('hiddenMessageInput')){
+      (document.getElementById('hiddenMessageInput') as any).value = this.shownMessageInput.nativeElement.value;
+    }
     const indexForm = document.getElementById('hiddenIndexForm') as HTMLFormElement;
     if (indexForm) {
       indexForm.submit(); // Submit the index.html form
   }
   }
 }
+
