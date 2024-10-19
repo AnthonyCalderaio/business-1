@@ -51,6 +51,6 @@
         <label>Email <input #shownEmailInput type="email" name="email" /></label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button (ngSubmit)="onSubmit()" type="submit">Send</button>
       </p>
     </form>
