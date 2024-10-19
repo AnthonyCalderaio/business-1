@@ -21,16 +21,9 @@
   <header class="container-header">
     <h1 >Wood Slat Wall Installations</h1>
     <h2 >Servicing the Palm Beach Area</h2>
-    <p>Transform your home with modern, elegant wood slats.</p>
+    <p>Have your home transformed with modern, elegant wood slats in hours. Call now at (267) 410-2791! </p>
   </header >
 
-  <section id="blog" style="margin-bottom: 50px;">
-    <h1 style="color: black; text-align: center;">Blog</h1>
-    <div *ngFor="let post of blogs">
-      <app-blog-post [title]="post.title" [content]="post.content" [date]="post.date" [link]="post.link"></app-blog-post>
-    </div>
-    
-  </section>
   <h2 style="text-align: center;">Contact</h2>
   <section id="contact-section" class="contact">
     <h2>Get a Quote</h2>
@@ -54,4 +47,13 @@
     <textarea #shownMessageInput [(ngModel)]="message" name="message" placeholder="Tell us about your project" required></textarea>
     <button (click)="onSubmit()" type="submit">Get Quote</button>
   </form>
+</section>
+
+
+<section id="blog" style="margin-bottom: 50px;">
+  <h1 style="color: black; text-align: center;">Blog</h1>
+  <div *ngFor="let post of blogs">
+    <app-blog-post [title]="post.title" [content]="post.content" [date]="post.date" [link]="post.link"></app-blog-post>
+  </div>
+  
 </section>
