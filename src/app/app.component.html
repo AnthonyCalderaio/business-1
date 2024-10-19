@@ -1,47 +1,4 @@
 
-<div id="home" class="container">
-
-    <nav class="menu-bar">
-      <div class="logo">Palm Beach Custom Wood Slat Installation</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <!-- <li><a href="#gallery">Gallery</a></li> -->
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </ul>
-    </nav>
-  
-
-  <section class="gallery">
-    <img src="../assets/examples/example1.jpg" alt="Modern wood slats">
-    <img src="../assets/examples/example2.jpg" alt="Dark wood slats">
-    <img src="../assets/examples/example3.jpg" alt="Elegant wood slat wall">
-  </section>
-
-  <header class="container-header">
-    <h1 >Wood Slat Wall Installations</h1>
-    <h2 >Servicing the Palm Beach Area</h2>
-    <p>Transform your home with modern, elegant wood slats.</p>
-  </header >
-
-  <section id="blog" style="margin-bottom: 50px;">
-    <h1 style="color: black; text-align: center;">Blog</h1>
-    <div *ngFor="let post of blogs">
-      <app-blog-post [title]="post.title" [content]="post.content" [date]="post.date" [link]="post.link"></app-blog-post>
-    </div>
-    
-  </section>
-  <h2 style="text-align: center;">Contact</h2>
-  <section id="contact-section" class="contact">
-    <h2>Get a Quote</h2>
-    <p>Fill out the form below or call us at <a href="tel:+1234567890">(267) 410-2791</a> for a quote. We guarantee a response within 2 hours!</p>
-    <!-- <form (ngSubmit)="onSubmit()" netlify>
-      <input type="text" [(ngModel)]="name" name="name" placeholder="Your Name" required>
-      <input type="email" [(ngModel)]="email" name="email" placeholder="Your Email" required>
-      <input type="tel" [(ngModel)]="phone" name="phone" placeholder="Your Phone Number" required>
-      <textarea [(ngModel)]="message" name="message" placeholder="Tell us about your project" required></textarea>
-      <button type="submit">Get Quote</button>
-    </form> -->
     test form
     <form name="contact" data-netlify="true">
       <p>
@@ -54,5 +11,3 @@
         <button type="submit">Send</button>
       </p>
     </form>
-  </section>
-</div>
