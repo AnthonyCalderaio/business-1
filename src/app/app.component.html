@@ -52,6 +52,6 @@
     <input #shownEmailInput type="email" [(ngModel)]="email" name="email" placeholder="Your Email" required>
     <input #shownPhoneInput type="tel" [(ngModel)]="phone" name="phone" placeholder="Your Phone Number" required>
     <textarea #shownMessageInput [(ngModel)]="message" name="message" placeholder="Tell us about your project" required></textarea>
-    <button type="submit">Get Quote</button>
+    <button (click)="onSubmit()" type="submit">Get Quote</button>
   </form>
 </section>
