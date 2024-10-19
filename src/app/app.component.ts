@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -14,6 +14,11 @@ let BlogsObject = require('./blog-post/posts.json');
 })
 export class AppComponent {
   title = 'business-1';
+  @ViewChild('hiddenNameInput') hiddenNameInput!: ElementRef;
+  @ViewChild('hiddenEmailInput') hiddenEmailInput!: ElementRef;
+
+  @ViewChild('shownNameInput') shownNameInput!: ElementRef;
+  @ViewChild('shownEmailInput') shownEmailInput!: ElementRef;
 
   name = '';
   email = '';
@@ -26,9 +31,12 @@ export class AppComponent {
     console.log('Form submitted', { name: this.name, email: this.email, phone: this.phone, message: this.message });
     // Here you would typically send this data to a server
     alert('Thank you for your inquiry. We will get back to you within 2 hours!');
-    this.name = '';
-    this.email = '';
-    this.phone = '';
-    this.message = '';
+    this.hiddenNameInput.nativeElement.value = this.shownNameInput.nativeElement.value;
+    this.hiddenEmailInput.nativeElement.value = this.shownEmailInput.nativeElement.value;
+
+    const indexForm = document.getElementById('hiddenIndexForm') as HTMLFormElement;
+    if (indexForm) {
+      indexForm.submit(); // Submit the index.html form
+  }
   }
 }
