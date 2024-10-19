@@ -13,7 +13,7 @@
   <!-- v2 -->
   
     <nav class="menu-bar">
-      <div class="logo">Palm Beach Wood Slats</div>
+      <div class="logo">Palm Beach Custom Modern</div>
       <ul>
         <li><a href="#home">Home</a></li>
         <!-- <li><a href="#gallery">Gallery</a></li> -->
@@ -29,19 +29,20 @@
     <img src="../assets/examples/example3.jpg" alt="Elegant wood slat wall">
   </section>
 
-  <header>
+  <header style="margin-bottom: 50px;">
     <h1 style="color: white;">Wood Slat Wall Installations</h1>
     <h2 style="color: #2c3e50;">Servicing the Palm Beach Area</h2>
     <p>Transform your home with modern, elegant wood slats.</p>
-  </header>
+  </header >
 
-  <section id="blog">
+  <section id="blog" style="margin-bottom: 50px;">
+    <h1 style="color: black; text-align: center;">Blog</h1>
     <div *ngFor="let post of blogs">
-      <app-blog-post [title]="post.title" [content]="post.content"></app-blog-post>
+      <app-blog-post [title]="post.title" [content]="post.content" [date]="post.date"></app-blog-post>
     </div>
     
   </section>
-
+  <h2 style="text-align: center;">Contact</h2>
   <section id="contact" class="contact">
     <h2>Get a Quote</h2>
     <p>Fill out the form below or call us at <a href="tel:+1234567890">(267) 410-2791</a> for a quote. We guarantee a response within 2 hours!</p>

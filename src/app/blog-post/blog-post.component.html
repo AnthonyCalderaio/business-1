@@ -1,5 +1,6 @@
 <article class="blog-post">
     <h3>{{ title }}</h3>
-    <!-- <p class="date">{{ date }}</p> -->
-    <p>{{ content }}</p>
+    <p class="date">{{ date }}</p>
+    <p [innerHTML]="content"></p>
+    
   </article>
