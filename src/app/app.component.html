@@ -28,17 +28,6 @@
   <section id="contact-section" class="contact">
     <h2>Get a Quote</h2>
     <p>Fill out the form below or call us at <a href="tel:+1234567890">(267) 410-2791</a> for a quote. We guarantee a response within 2 hours!</p>
-    <!-- <form name="contact-form" data-netlify="true">
-      <p>
-        <label>Name <input #shownNameInput type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Email <input #shownEmailInput type="email" name="email" /></label>
-      </p>
-      <p>
-        <button (click)="onSubmit()" type="submit">Send</button>
-      </p>
-    </form> -->
 
   <form name="contact-form" data-netlify="true">
     <input #shownNameInput type="text" [(ngModel)]="name" name="name" placeholder="Your Name" required>
