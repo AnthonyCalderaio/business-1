@@ -1,11 +1,8 @@
 <app-heading></app-heading>
-    <div class="container">
-      <app-experience></app-experience>
-      <section>
-        <app-service-card
-          *ngFor="let service of services" 
-          [service]="service"
-        ></app-service-card>
-      </section>
-      <app-contact-section></app-contact-section>
-    </div>
+<div class="container">
+  <app-experience></app-experience>
+  <section>
+    <app-service-card *ngFor="let service of services" [service]="service"></app-service-card>
+  </section>
+  <app-contact-section></app-contact-section>
+</div>
