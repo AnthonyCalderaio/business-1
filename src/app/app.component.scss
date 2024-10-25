@@ -126,3 +126,22 @@
   
 // Consulting
 /**/
+
+iframe {
+  display: flex;
+  justify-content: center;
+}
+
+.experience-and-info {
+  display: flex;
+}
+
+.experience {
+  width: 100%;
+}
+
+ul {
+  & li {
+    text-align: left;
+  }
+}

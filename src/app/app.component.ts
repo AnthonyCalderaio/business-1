@@ -7,19 +7,38 @@ import { ServiceCardComponent } from './projects/consulting/heading/service-card
 import { ContactSectionComponent } from './projects/consulting/contact-section/contact-section.component';
 import { ExperienceComponent } from './projects/consulting/experience/experience.component';
 import { SERVICES } from './projects/consulting/services/service.data';
+import { DomSanitizer } from '@angular/platform-browser';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, FormsModule, HeadingComponent, NgFor, ServiceCardComponent, ContactSectionComponent, ExperienceComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  providers: [],
 })
 export class AppComponent {
-  title = 'business-1';
+  githubSnippet = undefined; //this.sanitizer.bypassSecurityTrustHtml('<script src="https://gist.github.com/AnthonyCalderaio/9afa05e621b0dcc80bb5251520f5c8ce.js"></script>');
+  
 
- 
+  
+  title = 'business-1';
   services = SERVICES;
+
+  constructor(
+    public sanitizer: DomSanitizer,
+    private http: HttpClient
+  ){
+  }
+
+  ngOnInit(): void {
+    this.http.get('https://gist.github.com/AnthonyCalderaio/9afa05e621b0dcc80bb5251520f5c8ce.js')
+      .subscribe((data: any) => {
+        this.githubSnippet = data.files['FILENAME'].content;
+      });
+  }
+
 
 }
 
