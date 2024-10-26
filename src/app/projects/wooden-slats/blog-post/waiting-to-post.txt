@@ -1,4 +1,0 @@
-{
-    "title":"Top 5 Types of Wood for Slat Installation",
-    "content":"<ul><li>Pine: Affordable and easy to work with, ideal for indoor use.  <li>Cedar: Naturally resistant to moisture, making it great for outdoor applications.  <li>Redwood: Offers stunning aesthetics and durability, perfect for high-end projects. <li> Maple: Known for its hardness, suitable for areas with high traffic. <li> Teak: Resistant to water and insects, excellent for outdoor furniture. </xul>"
-}
