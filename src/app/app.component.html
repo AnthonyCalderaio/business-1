@@ -1,24 +1,5 @@
 <app-heading></app-heading>
 <div class="container">
-  <!-- <app-experience></app-experience> -->
-
-  <!-- <div class="experience-and-info">
-    <section class="experience">
-      <a href="tel:2674102791" class="btn">
-        Claim Your Free Hour
-      </a>
-       <ul>
-        <li>Python</li>
-        <li>Angular</li>
-        <li>Typescript</li>
-        <li>Machine Learning</li>
-        <li>AWS</li>
-        <li>React</li>
-        <li>Ask!</li>
-       </ul>
-    </section>  
-  </div> -->
-  
   <div [innerHTML]="githubSnippet"></div>  <section>
     <app-service-card *ngFor="let service of services" [service]="service"></app-service-card>
   </section>
