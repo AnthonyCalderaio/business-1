@@ -2,7 +2,7 @@
 
 body {
     margin: 0px;
-    background-color: lightgray;
+    background-color: transparent;
 }
 html {
     scroll-behavior: smooth;
@@ -24,7 +24,7 @@ body {
   }
   
   .service-card {
-    background: darkgray;
+    background: transparent;
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1rem 0;
@@ -63,7 +63,7 @@ body {
     text-align: center;
     margin-bottom: 3rem;
     padding: 2rem 0;
-    background: darkgray;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,3 +114,13 @@ body {
     // justify-content: center;
     padding-left: 34px;
   }
+
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+ }
