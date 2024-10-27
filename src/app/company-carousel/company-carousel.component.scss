@@ -1,0 +1,29 @@
+.brand-logos {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Centers items horizontally */
+    align-items: center;   /* Centers items vertically */
+  }
+  
+  .logo-item {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    transition: transform 0.3s;
+  }
+  
+  .logo-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .logo-item:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,0 +1,9 @@
+<div class="brand-logos">
+    <h2>Contributions</h2>
+    <div class="logo-grid">
+      <a *ngFor="let brand of brands" [href]="brand.website" target="_blank" class="logo-item">
+        <img [src]="brand.logo" [alt]="brand.name" />
+      </a>
+    </div>
+  </div>
+  

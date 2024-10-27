@@ -9,11 +9,12 @@ import { ExperienceComponent } from './projects/consulting/experience/experience
 import { SERVICES } from './projects/consulting/services/service.data';
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { CompanyCarouselComponent } from './company-carousel/company-carousel.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FormsModule, HeadingComponent, NgFor, ServiceCardComponent, ContactSectionComponent, ExperienceComponent],
+  imports: [CommonModule, RouterOutlet, FormsModule, HeadingComponent, NgFor, ServiceCardComponent, ContactSectionComponent, ExperienceComponent, CompanyCarouselComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [],
@@ -32,12 +33,7 @@ export class AppComponent {
   ){
   }
 
-  ngOnInit(): void {
-    this.http.get('https://gist.github.com/AnthonyCalderaio/9afa05e621b0dcc80bb5251520f5c8ce.js')
-      .subscribe((data: any) => {
-        this.githubSnippet = data.files['FILENAME'].content;
-      });
-  }
+  ngOnInit(): void { }
 
 
 }
