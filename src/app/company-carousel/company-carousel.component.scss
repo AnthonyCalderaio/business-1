@@ -4,23 +4,25 @@
   }
   
   .logo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    justify-items: center; /* Centers items horizontally */
-    align-items: center;   /* Centers items vertically */
+    display: flex; /* Use flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
   }
   
   .logo-item {
-    max-width: 100px;
-    max-height: 100px;
-    display: block;
-    transition: transform 0.3s;
+    display: flex; /* Use flexbox for each logo item */
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    height: 150px; /* Set a fixed height for uniformity */
+    width: 150px; /* Set a fixed width for uniformity */
+    border: 1px solid #ddd; /* Optional: add a border for visibility */
   }
   
   .logo-item img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensures logos fit within the container */
+    max-height: 100%; /* Maintain height consistency */
+    object-fit: contain; /* Maintain aspect ratio */
   }
   
   .logo-item:hover {
