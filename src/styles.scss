@@ -23,24 +23,9 @@ body {
     padding-top: 0px;
   }
   
-  .service-card {
-    background: transparent;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-  }
   
   .service-card:hover {
     transform: translateY(-5px);
-  }
-  
-  .contact-info {
-    background: darkblue;
-    border-radius: 8px;
-    padding: 2rem;
-    margin-top: 2rem;
   }
   
   .btn {
@@ -100,11 +85,7 @@ body {
   //   justify-content: center;
   // }
 
-  .linkedin-badge {
-    // display: flex;
-    // justify-content: center;
-    padding-left: 34px;
-  }
+ 
 
   video {
     position: fixed;
