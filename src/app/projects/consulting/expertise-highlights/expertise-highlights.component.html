@@ -1,0 +1,20 @@
+<div class="highlights-section">
+
+    <h2>Publications</h2>
+    <div *ngFor="let case of publications" class="case-item">
+      <h3>{{ case.highlight }}</h3>
+      <p>{{ case.description }}</p>
+      <p><strong>Publication url:</strong> <a [href]="case.workUrl "> A Multi-Pronged Approach Targeting SARS-CoV-2 Proteins Using Ultra-Large Virtual Screening</a></p>
+      <p><strong>Github url:</strong><a [href]="case.githubUrl"> Github Repo</a>  </p>
+    </div>
+
+
+    <h2>Previous work</h2>
+    <div *ngFor="let area of expertise" class="expertise-item">
+      <h3>{{ area.title }}</h3>
+      <p>{{ area.description }}</p>
+      <p><strong>Result:</strong> {{ area.result }}</p>
+    </div>
+  
+    
+  </div>
