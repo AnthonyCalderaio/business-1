@@ -1,1 +1,12 @@
-<p>blog works!</p>
+<!-- src/app/blog/blog.component.html -->
+<div class="blog-container">
+    <div *ngFor="let post of blogPosts" class="blog-card">
+      <img *ngIf="post.imageUrl" [src]="post.imageUrl" alt="{{ post.title }}" />
+      <div class="blog-content">
+        <h2>{{ post.title }}</h2>
+        <p class="blog-author">By {{ post.author }} on {{ post.date | date: 'longDate' }}</p>
+        <p>{{ post.content | slice:100 }}...</p>
+        <!-- <button (click)="readMore(post.id)">Read More</button> -->
+      </div>
+    </div>
+  </div>

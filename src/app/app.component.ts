@@ -21,9 +21,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
   providers: [],
 })
 export class AppComponent {
-
-
-
   constructor(
     public sanitizer: DomSanitizer,
     private http: HttpClient
@@ -31,8 +28,6 @@ export class AppComponent {
   }
 
   ngOnInit(): void { }
-
-
 
 }
 

@@ -10,6 +10,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
+  // Killswitches
+  blogEnabled = false
   menuOpen = false;
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
