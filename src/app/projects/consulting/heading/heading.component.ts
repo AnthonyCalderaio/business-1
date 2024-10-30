@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewChecked, Component } from '@angular/core';
 
 @Component({
   selector: 'app-heading',
@@ -8,6 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './heading.component.scss'
 })
 export class HeadingComponent {
+  // ngAfterViewChecked(): void {
+  //   setTimeout(() => {
+  //     // const iframe: any = document.getElementById("myIframe");
+  //     if(true){
+  //       // const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+  //       // iframeDocument.body.style.display = "flex";
+  //       // iframeDocument.body.style.justifyContent = "center";
+  //       // iframeDocument.body.style.alignItems = "center"; 
+  //       // alert('done')
+  //     }
+      
+  //   }, 4000);
+   
+  // }
 
   callSomeFunction() {
     // alert('function called')
@@ -44,4 +58,5 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
      */
 
   }
+  
 }
