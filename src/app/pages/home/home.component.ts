@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HeadingComponent } from '../heading/heading.component';
+import { HeadingComponent } from '../../heading/heading.component';
 import { NgFor } from '@angular/common';
-import { CompanyCarouselComponent } from '../../../company-carousel/company-carousel.component';
-import { ExperienceComponent } from '../experience/experience.component';
-import { ServiceCardComponent } from '../heading/service-card/service-card.component';
-import { NavBarComponent } from '../nav-bar/nav-bar.component';
-import { SERVICES } from '../services/service.data';
-import { ContactSectionComponent } from '../contact-section/contact-section.component';
+import { CompanyCarouselComponent } from '../../company-carousel/company-carousel.component';
+import { ExperienceComponent } from '../../experience/experience.component';
+import { ServiceCardComponent } from '../../heading/service-card/service-card.component';
+import { NavBarComponent } from '../../nav-bar/nav-bar.component';
+
+import { ContactSectionComponent } from '../../contact-section/contact-section.component';
+import { SERVICES } from '../../services/service.data';
 
 @Component({
   selector: 'app-home',

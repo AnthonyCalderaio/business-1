@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { ExpertiseHighlightsComponent } from './projects/consulting/expertise-highlights/expertise-highlights.component';
-import { HomeComponent } from './projects/consulting/home/home.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ExpertiseHighlightsComponent } from './pages/expertise-highlights/expertise-highlights.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent},

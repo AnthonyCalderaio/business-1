@@ -1,8 +1,8 @@
 <nav class="navbar">
   <div class="logo">Deeper Recall</div>
   <ul class="nav-links" [ngClass]="{'show': menuOpen}">
-    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/expertise" routerLinkActive="active">Expertise</a></li>
+    <li><a routerLink="/" routerLinkActive="active" (click)="menuOpen = false">Home</a></li>
+    <li><a routerLink="/expertise" routerLinkActive="active" (click)="menuOpen = false">Expertise</a></li>
   </ul>
   <div class="hamburger" (click)="toggleMenu()">
     <span></span>
