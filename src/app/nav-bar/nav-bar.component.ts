@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 })
 export class NavBarComponent {
   // Killswitches
-  blogEnabled = false
+  blogEnabled = true
   menuOpen = false;
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
