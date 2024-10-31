@@ -33,7 +33,7 @@ export class BlogComponent {
       id: 1,
       title: 'What the US Election Could Mean for the Global Chip Market',
       author: 'Amber Jackson',
-      content: 'Taiwan produces nearly 60% of the world\'s semiconductor chip supply and nearly 90% of the most advanced chips needed to power AI',
+      content: 'Such tariffs would inevitably affect global leaders in chip building, including Taiwan Semiconductor Manufacturing Company (TSMC), whose customers include giants Nvidia and Apple. The US currently buys 92% of its leading-edge chips from TMSC. Taiwan produces nearly 60% of the world\'s semiconductor chip supply and nearly 90% of the most advanced chips needed to power AI',
       date: new Date('2024-10-29'),
       blogUrl: 'https://datacentremagazine.com/critical-environments/what-the-us-election-could-mean-for-the-global-chip-market',
       imageUrl: 'https://assets.bizclikmedia.net/1336/4c8b00d59f90f2eae8de5613359aea89:cbd1fc18ff66094df1ef57f14ff6ac71/142126ea-us-debate.webp',

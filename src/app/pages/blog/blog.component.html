@@ -1,18 +1,9 @@
-<!-- src/app/blog/blog.component.html -->
-<div class="blog-container">
-    <div *ngFor="let post of blogPosts" class="blog-card"> 
-      <img *ngIf="post.imageUrl" [src]="post.imageUrl" alt="{{ post.title }}" />
-      <div class="blog-content">
-        <h2>{{ post.title }}</h2>
-        <p class="blog-author">By {{ post.author }} on {{ post.date | date: 'longDate' }}</p>
-        <p>{{ post.content | slice:0 }}...</p>
-        <button (click)="readMore(post.blogUrl)">Read More</button>
-      </div>
+  <div class="blog-post" *ngFor="let post of blogPosts" >
+    <img class="blog-image" [src]="post.imageUrl" alt="Blog Image" />
+    <div class="blog-content">
+      <h2 class="blog-title"><i>{{ post.title }}</i></h2>
+      <p class="blog-author">By {{ post.author }} on {{ post.date | date: 'longDate' }}</p>
+      <p class="blog-excerpt">{{ post.content | slice:0 }}....</p>
+      <button class="read-more-btn" (click)="readMore(post.blogUrl)">Read More</button>
     </div>
   </div>
-
-  <!-- <div class="blog-container">
-    <div *ngFor="let post of blogPosts" class="blog-card"> 
-      <img [src]="" alt="{{ post.title }}" />
-    </div>
-  </div>  -->
