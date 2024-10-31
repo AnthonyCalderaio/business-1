@@ -1,5 +1,5 @@
 <nav class="navbar">
-  <div class="logo">Deeper Recall</div>
+  <div class="logo clickable" (click)="navigateHome()">Deeper Recall</div>
   <ul class="nav-links" [ngClass]="{'show': menuOpen}">
     <li><a routerLink="/" routerLinkActive="active" (click)="menuOpen = false">Home</a></li>
     <li><a routerLink="/expertise" routerLinkActive="active" (click)="menuOpen = false">Expertise</a></li>
