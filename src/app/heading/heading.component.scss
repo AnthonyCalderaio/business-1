@@ -1,5 +1,7 @@
 .explaination {
   padding: 35px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .header {
@@ -10,7 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    padding: 10px;
+    margin-top: 20px;
   }
 
   .linkedin-badge {
@@ -33,4 +36,8 @@
 
 .call-now-button {
   width: 100px;
+}
+
+.badge-container {
+ margin: 10px;
 }

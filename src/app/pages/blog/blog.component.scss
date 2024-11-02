@@ -9,6 +9,8 @@
   margin-bottom: 20px;
   transition: box-shadow 0.3s ease;
   margin: 35px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .blog-post:hover {
@@ -54,7 +56,6 @@
 /* "Read More" button */
 .read-more-btn {
   align-self: flex-end;
-  background-color: #007bff;
   color: white;
   padding: 8px 16px;
   border: none;
