@@ -54,7 +54,7 @@
 }
 
 /* Mobile responsive styling */
-@media (max-width: 768px) {
+//@media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -73,4 +73,4 @@
   .hamburger {
     display: flex;
   }
-}
+//}
