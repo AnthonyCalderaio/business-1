@@ -37,7 +37,16 @@ export class BlogComponent {
       date: new Date('2024-10-29'),
       blogUrl: 'https://datacentremagazine.com/critical-environments/what-the-us-election-could-mean-for-the-global-chip-market',
       imageUrl: 'https://assets.bizclikmedia.net/1336/4c8b00d59f90f2eae8de5613359aea89:cbd1fc18ff66094df1ef57f14ff6ac71/142126ea-us-debate.webp',
-    }
+    },
+    {
+      id: 2,
+      title: 'Liquid” machine-learning system adapts to changing conditions',
+      author: 'Daniel Ackerman',
+      content: 'The new type of neural network could aid decision making in autonomous driving and medical diagnosis.',
+      date: new Date('2021-01-28'),
+      blogUrl: 'https://news.mit.edu/2021/machine-learning-adapts-0128',
+      imageUrl: 'https://news.mit.edu/sites/default/files/styles/news_article__hero_image_gallery/public/images/202101/MIT-liquid-networks-01Hero-press.gif?itok=7zwxirEq',
+    },
   ];
 
   constructor() {}
