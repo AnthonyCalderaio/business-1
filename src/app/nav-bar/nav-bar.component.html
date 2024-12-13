@@ -2,7 +2,8 @@
   <div class="logo clickable" (click)="navigateHome()">Deeper Recall</div>
   <ul class="nav-links" [ngClass]="{'show': menuOpen}">
     <li><a routerLink="/" routerLinkActive="active" (click)="menuOpen = false">Home</a></li>
-    <li><a routerLink="/expertise" routerLinkActive="active" (click)="menuOpen = false">Expertise 2</a></li>
+    <li><a routerLink="/expertise" routerLinkActive="active" (click)="menuOpen = false">Expertise</a></li>
+    <li><a routerLink="/downloads" routerLinkActive="active" (click)="menuOpen = false">Downloads</a></li>
     @if(blogEnabled){
       <li><a routerLink="/blog" routerLinkActive="active" (click)="menuOpen = false">Blog</a></li>
     }
